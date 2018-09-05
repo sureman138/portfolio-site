@@ -26,7 +26,7 @@ body {
 @media screen and (min-width:176px) and (max-width:900px){
   #banner-text h1{
     font-size:40px !important;
-    background-color: red;
+    
   }
 }
 
@@ -131,13 +131,15 @@ body {
   grid-column-gap: 20px;
   grid-template-areas: ". a b. ";
 }
-@media (max-width:1000px){
+@media (max-width:1050px){
   #form-wrapper{
     display:grid;
-    grid-template-rows: .5fr .5fr;
-    grid-row-gap: 50px;
-    grid-template-areas: "a""b";
-    justify-content: center;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: .25fr .5fr .25fr;
+
+    grid-template-areas:". a ."
+                        ". b .";
+
   }
 
 }
