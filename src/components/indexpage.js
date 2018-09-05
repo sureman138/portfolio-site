@@ -12,7 +12,7 @@ class Index extends Component{
               alt="avatar"
               className="avatar-img"
             />
-            <div className="banner-text">
+          <div id="banner-text">
               <h1>Full Stack Web Developer</h1>
               <hr />
               <p>C# | ASP.NET MVC | SQL | PHP | JavaScript | HTML/CSS | React | Bootstrap</p>

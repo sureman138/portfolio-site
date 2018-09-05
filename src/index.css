@@ -23,7 +23,12 @@ body {
   background: linear-gradient(to right, #003973,#E5E5BE);
 
 }
-
+@media screen and (min-width:176px) and (max-width:900px){
+  #banner-text h1{
+    font-size:40px !important;
+    background-color: red;
+  }
+}
 
   .title {
   background-color: black;
@@ -45,27 +50,27 @@ body {
   border-radius:50%;
 }
 
-.banner-text{
+#banner-text{
   background-color: black;
   opacity: .5;
   width:75%;
   margin:auto;
   border-radius:10px;
 }
-.banner-text h1{
-  font-size: 66px;
+#banner-text h1{
+  font-size: 60px;
   font-weight: bold;
   color:white;
 }
 
-.banner-text hr{
+#banner-text hr{
   border-top:5px dotted white;
   width:50%;
   margin:auto;
 
 }
 
-.banner-text p{
+#banner-text p{
   color:white;
   font-size: 20px;
   padding:1em;
@@ -73,26 +78,36 @@ body {
 
 .social-links {
   display:flex;
+  flex-wrap:wrap;
   justify-content: space-between;
   width:50%;
   margin:auto;
 }
-
+@media screen and (min-width:176px) and (max-width:900px){
+  .social-links{
+    justify-content: center;
+  }
+}
 .social-links i {
   color:white;
   font-size:4em;
   padding:8px;
 }
 
-.description p{
+#description p{
   color:white;
 }
-.description{
-  width:90%;
-  text-align: center;
+#description{
+  text-align: justify;
+  grid-area:a;
+  border:1px solid white;
+  border-radius: 5px;
+  padding:10px;
+  height:250px;
 }
 #contact{
   display:flex;
+  flex-wrap: wrap;
   flex-direction:column;
   margin:auto;
   width:75%;
@@ -104,10 +119,50 @@ body {
 }
 
 #form{
+  padding-top:10px;
   height:300px;
+
+  grid-area: b;
 }
 #form-wrapper{
   padding-top:30px;
   display:grid;
-  grid-template-columns: 1fr .25fr;
+  grid-template-columns: .25fr .6fr .5fr .25fr;
+  grid-column-gap: 20px;
+  grid-template-areas: ". a b. ";
+}
+@media (max-width:1000px){
+  #form-wrapper{
+    display:grid;
+    grid-template-rows: .5fr .5fr;
+    grid-row-gap: 50px;
+    grid-template-areas: "a""b";
+    justify-content: center;
+  }
+
+}
+#email input{
+  border-radius:5px;
+  width:250px;
+  text-align: center;
+}
+
+#message{
+  margin-top:10px;
+
+}
+#message textarea{
+  width:250px;
+  border-radius:5px;
+}
+
+#email-button{
+  text-decoration:none;
+  color:black;
+  border:1px solid white;
+  background-color:white;
+}
+#email-button:hover{
+  background-color:blue;
+  color:white;
 }
