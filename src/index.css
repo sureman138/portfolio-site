@@ -33,7 +33,7 @@ body {
   .title {
   background-color: black;
   opacity: .5;
-  width:50%;
+  width:60%;
   margin:auto;
   border-radius:10px;
   text-align: center;
@@ -46,7 +46,7 @@ body {
 }
 
 .avatar-img{
-  height:200px;
+  height:150px;
   border-radius:50%;
 }
 
@@ -157,11 +157,23 @@ body {
   #form-wrapper{
     display:grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: .25fr .5fr .25fr;
+    grid-template-columns: .5fr 1fr .5fr;
 
     grid-template-areas:". a ."
                         ". b .";
 
+  }
+  #contact{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    margin:auto;
+    width:100%;
+    border-radius:10px;
+    text-align: center;
+    background-color: black;
+    opacity: .5;
+    color:white;
   }
 
 }
@@ -188,5 +200,135 @@ body {
 }
 #email-button:hover{
   background-color:blue;
+  color:white;
+}
+
+#quote-link{
+  grid-area: a;
+}
+
+#journal-link{
+  grid-area: b;
+}
+#landing-link{
+  grid-area: c;
+}
+#libs-link{
+  grid-area: d;
+}
+
+@media (min-width:700px){
+  #project-container{
+    display:grid;
+    grid-template-columns: .5fr 1fr 1fr .25fr;
+    grid-template-rows:1fr 1fr .25fr;
+    grid-row-gap:30px;
+    grid-column-gap:30px;
+    grid-template-areas: ". a b ."
+                         ". c d .";
+  }
+
+}
+
+.project-image{
+  height:200px;
+  width:300px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#journal-image{
+   background-image: url("/journal-app.PNG");
+
+}
+#quote-image{
+  background-image: url("/quote-app.PNG");
+
+}
+#landing-image{
+  background-image: url("/landing-page.PNG");
+
+}
+#libs-image{
+  background-image: url("/mad-libs.PNG");
+}
+#pilgrim-image{
+  background-image: url("/pilgrim-alive.PNG");
+}
+#concordia-image{
+  background-image: url("/concordia.PNG");
+}
+
+@media (max-width:700px){
+  #project-container{
+    display:grid;
+    width:100%;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row-gap:10px;
+    grid-column-gap:10px;
+    grid-template-areas:
+                         ". a ."
+                         ". b ."
+                         ". c ."
+                         ". d .";
+
+  }
+  .project-image{
+    height:200px;
+    width:250px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+  }
+  #project-title{
+    width:80%;
+  }
+}
+  .overlay {
+
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+
+}
+
+.project-image:hover .overlay {
+  opacity: .9;
+}
+a{
+  text-decoration: none;
+  text-align:center;
+}
+.text {
+  color: white;
+  font-size: 30px;
+  width:100%;
+  padding-top:20px;
+}
+ul{
+  text-align: justify;
+  list-style-position: inside;
+}
+
+.project-group:hover {
+  cursor: pointer;
+  background-color: black;
+  opacity: .5;
+}
+
+.project-group{
+  width:100px;
+  border: 1px solid white;
+  color:white;
+  margin:10px;
+}
+
+#project-select{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  margin:20px;
   color:white;
 }

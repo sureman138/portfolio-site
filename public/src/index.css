@@ -49,19 +49,7 @@ body {
   height:200px;
   border-radius:50%;
 }
-.avatar-img:hover{
-  animation:bounce 2s;
-  height:
-}
-@keyframes bounce {
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-  }
+
 #banner-text{
   background-color: black;
   opacity: .5;
