@@ -21,7 +21,7 @@ class Personal extends Component{
               </div>
             </div>
           </a>
-          <a className="project" id="journal-link" href="http://richscheuermanntesthostingpackage-com.stackstaging.com/content/7-mysql/" target="_blank" rel="noopener noreferrer">
+          <a className="project" id="journal-link" href="https://journal-app1.herokuapp.com/" target="_blank" rel="noopener noreferrer">
             <div className="project-image" id="journal-image">
               <div className="overlay">
                 <div className="text">
@@ -38,7 +38,7 @@ class Personal extends Component{
               </div>
             </div>
           </a>
-          <a className="project" id="landing-link" href="http://richscheuermanntesthostingpackage-com.stackstaging.com/content/5-bootstrap/app.html#" target="_blank" rel="noopener noreferrer">
+          <a className="project" id="landing-link" href="https://landing-page-f280c.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
             <div className="project-image" id="landing-image">
               <div className="overlay">
                 <div className="text">

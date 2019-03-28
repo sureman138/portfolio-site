@@ -8,7 +8,7 @@ class Index extends Component{
         <Grid className="index-grid">
           <Cell col={12}>
             <img
-              src="http://icons-for-free.com/free-icons/png/512/628288.png"
+              src="/avatar.png" 
               alt="avatar"
               className="avatar-img"
             />
